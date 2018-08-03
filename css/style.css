@@ -32,13 +32,15 @@ img {
 .container {
     height: 535px;
     width: 320px;
-    display: flex;
-    flex-direction: column;
+    margin: auto;
+
 }
 .container_header {
     background-image: url(../img/bg_main.png);
     background-repeat: no-repeat;
+    padding: 15px;
 }
+
 .name_page {
     color: #eec643;
     font-family: Prata, sans-serif;
@@ -47,16 +49,19 @@ img {
     color: #fff;
     font-size: 36px;
 }
-.title_text {
-    color: #fff;
-}
+
+
 .button {
     background-color: #eec643;
     color: #fff;
     width: 290px;
+    text-transform: uppercase;
+}
+.container_main {
+    padding-left: 15px;
 }
 .block_main {
-    margin: auto;
+      
 }
 .subtitle_music {
     width: 288px;
@@ -68,9 +73,18 @@ h2 {
     font-family: Prata, sans-serif;
     font-size: 36px;
 }
+.subtitle_img {
+    color: white;
+    padding: 25px 0 0 12px;
+}
+.title_text {
+    color: #fff;
+    padding: 0 0 0 12px;
+}
+
 .block {
     height: 144px;
-    width: 288px;
+    width: 100%;
 }
 .vokal {
     background-image: url(../img/vokal.png);
@@ -84,12 +98,36 @@ h2 {
     background-image: url(../img/piano.png);
     background-repeat: no-repeat;
     height: 144px;
-    width: 212px;
+    width: 75%;
 }
 .piano_information {
-    display: inline-flex;
+    display: flex;
+    width: 100%;
 }
 .button_information {
     background-color: #eec643;
+    transform: rotate(-90deg);
+    height: 144px;
+    width: 25%;
+    
 }
-@media (min-width: 990px) {}
+.text_button_information {
+text-transform: uppercase;
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 990px) {
+    .block_main {
+        display: flex;
+        flex-direction: column;
+    }
+}
