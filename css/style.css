@@ -29,10 +29,10 @@ img {
     max-width: 100%;
     height: auto;
 }
-.page-header {} .container {
+.container {
     min-height: 535px;
-    width: 320px;
-    margin: 0 auto;
+    min-width: 320px;
+    margin: auto;
     display: block;
 }
 .container_header {
@@ -46,8 +46,8 @@ img {
     font-family: Prata, regular, sans-serif;
     font-size: 30px;
     margin-top: 20px;
-}
-.promo {} .title {
+} 
+.title {
     color: #fff;
     font-size: 30px;
     margin-top: 85px;
@@ -62,7 +62,7 @@ img {
 .button {
     background-color: #eec643;
     color: #fff;
-    width: 290px;
+    min-width: 290px;
     text-transform: uppercase;
     vertical-align: middle;
     padding: 20px 94px;
@@ -70,11 +70,16 @@ img {
     text-decoration: none;
 }
 .section_music {
-    margin-left: 20px;
+    min-width: 320px;
+    margin: auto;
+    padding: 0 15px;
 }
 .container_main {
-    width: 290px;
+   /* min-width: 320px;
+    margin: auto;*/
     display: flex;
+    flex-wrap: wrap;
+    /*padding: 0 15px;*/
 }
 .subtitle_music {
     border-top: 2px solid #eec643;
@@ -82,67 +87,55 @@ img {
     width: 230px;
     font-family: Prata, regular, sans-serif;
     font-size: 30px;
+    /*margin-left: 15px;*/
 }
-/*.nursery {
-    display: flex;
-    margin-top: 30px;
-}
-.container_main {
-    padding-left: 15px;
-    /*??????*/
-
-}
-*/ .subtitle_img {
+.subtitle_img {
     color: white;
     padding: 25px 0 0 12px;
 }
 .block {
-    flex-wrap: wrap;
-    /*min-height: 144px;
-    width: 288px;
-    display: block;*/
+    min-height: 144px;
+    background-size: cover;
 }
 .block_vokal {
     background-image: url(../img/vokal.png);
     background-repeat: no-repeat;
-    /*flex-direction: column;*/
-    width: 290px;
+    width: 100%;
+    /*margin: 0 15px;
+    margin-bottom: 15px;*/
 }
 .block_guitar {
     background-image: url(../img/guitar.png);
     background-repeat: no-repeat;
-    /*flex-direction: column;*/
-    width: 290px;
+    width: 100%;
+   /* margin: 0 15px;
+    margin-bottom: 15px;*/
 }
 .block_piano {
     background-image: url(../img/piano.png);
     background-repeat: no-repeat;
-    /*flex-direction: column;*/
-    width: 212px;
-}
-/*.block_piano_information {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    width: 288px;   */
-
+    width: 70%;
 }
 .title_text {
-    color:#fff;
-    padding:0 0 0 12px;
+    color: #fff;
+    padding: 0 0 0 12px;
 }
 .block_information {
-    background-color:#eec643;
-    width:60px;
+    background-color: #eec643;
+    width: 30%;
+    min-height: 144px;
+
 }
 .text_button_information {
-    display:block;
-    transform:rotate(-90deg);
-    text-align:bottom;
+   /* display: block;*/
+    transform: rotate(-90deg);
+
+
+    /*text-align: bottom;*/
 }
 @media (min-width: 990px) {
     .block_main {
-        display:flex;
-        flex-direction:column;
+        display: flex;
+        flex-direction: column;
     }
 }
