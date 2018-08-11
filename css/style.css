@@ -47,6 +47,9 @@ img {
     font-size: 30px;
     margin-top: 20px;
 } 
+nav {
+    display: none;
+}
 .title {
     color: #fff;
     font-size: 30px;
@@ -55,6 +58,9 @@ img {
 }
 .title_text {
     display: inline-block;
+}
+.title_text_promo {
+    color: #fff;
 }
 .button_lesson {
     margin-top: 140px;
@@ -75,11 +81,8 @@ img {
     padding: 0 15px;
 }
 .container_main {
-   /* min-width: 320px;
-    margin: auto;*/
     display: flex;
     flex-wrap: wrap;
-    /*padding: 0 15px;*/
 }
 .subtitle_music {
     border-top: 2px solid #eec643;
@@ -87,12 +90,13 @@ img {
     width: 230px;
     font-family: Prata, regular, sans-serif;
     font-size: 30px;
-    /*margin-left: 15px;*/
+    margin-top: 30px;
 }
 .subtitle_img {
     color: white;
     padding: 25px 0 0 12px;
 }
+
 .block {
     min-height: 144px;
     background-size: cover;
@@ -101,20 +105,28 @@ img {
     background-image: url(../img/vokal.png);
     background-repeat: no-repeat;
     width: 100%;
-    /*margin: 0 15px;
-    margin-bottom: 15px;*/
+    margin-bottom: 15px;
+    margin-top: -10px;
+    padding-top: 30px;
 }
 .block_guitar {
     background-image: url(../img/guitar.png);
     background-repeat: no-repeat;
     width: 100%;
-   /* margin: 0 15px;
-    margin-bottom: 15px;*/
+    margin-bottom: 15px;
+    padding-top: 30px;
+    padding-right: 10px;
 }
 .block_piano {
     background-image: url(../img/piano.png);
     background-repeat: no-repeat;
-    width: 70%;
+    width: 73%;
+    margin-right: 17px;
+    display: inline-block;
+    padding-top: 30px;
+}
+.block_lectures {
+    display: none;
 }
 .title_text {
     color: #fff;
@@ -122,20 +134,233 @@ img {
 }
 .block_information {
     background-color: #eec643;
-    width: 30%;
+    width: 21%;
     min-height: 144px;
-
+    display: inline-block;
 }
 .text_button_information {
-   /* display: block;*/
     transform: rotate(-90deg);
-
-
-    /*text-align: bottom;*/
+    text-transform: uppercase;
+    margin-top: 75px;
+}
+.section_speed_structure_result {
+    margin-top: 15px;
+}
+.subtitle_speed {
+    border-top: 2px solid #eec643;
+    border-bottom: 2px solid #eec643;
+    width: 230px;
+    font-family: Prata, regular, sans-serif;
+    font-size: 30px;
+}
+.structure_result {
+    display: flex;
+    flex-wrap: wrap;
+}
+.section_speed {
+    min-width: 320px;
+    margin: auto;
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.block_structure {
+    background-image: url(../img/structure.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    min-width: 288px;
+    margin-bottom: 15px;
+    padding-top: 30px;
+    padding-right: 30px;
+}
+.block_result {
+    background-image: url(../img/result.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 30px;
+}
+.section_studio_lesson {
+margin-top: 15px;
+}
+.subtitle_img_studio {
+    color: white;
+    padding-left: 10px;
+}
+.block_studio {
+    background-image: url(../img/studio.png);
+    background-repeat: no-repeat;
+    width: 73%;
+    display: inline-block;
+    padding-top: 60px;
+}
+.block_lesson {
+     background-color: #eec643;
+    width: 21%;
+    min-height: 144px;
+    display: inline-block;
+    margin-left: 10px;
+}
+.text_button_lesson {
+    transform: rotate(-90deg);
+    text-transform: uppercase;
+    margin-top: 61px;
+    color: white;
+}
+.container_school {
+    min-width: 320px;
+    margin: auto;
+    padding: 0 15px;
+}
+.subtitle_school {
+    border-top: 2px solid #eec643;
+    border-bottom: 2px solid #eec643;
+    width: 230px;
+    font-family: Prata, regular, sans-serif;
+    font-size: 30px;
+    margin-left: 15px;
+    margin-top: 40px;
+}
+.subtitle_img_cherry {
+    color: #fff;
+    margin: 10px;
+}
+.title_text_concert {
+    color: #fff;
+}
+.container_big_video {
+    background-image: url(../img/big_video_mobile.png);
+    background-repeat: no-repeat;
+    margin-left: 40px;
+}
+.container_three_video {
+    display: none;
+}
+.about_menu_footer {
+    display: none;
+}
+.subtitle_footer {
+    border-top: 2px solid #eec643;
+    border-bottom: 2px solid #eec643;
+    width: 230px;
+    font-family: Prata, regular, sans-serif;
+    font-size: 30px;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+.button_lesson_footer {
+margin-top: 50px;
+margin-left: 15px;
+margin-bottom: 60px;
+}
+.logo_footer {
+    display: none;
+}
+.adress {
+    margin-left: 25px;
+}
+.map {
+    height: 216px;
+    width: 280px;
+    margin-left: 20px;
+    margin-top: 15px;
 }
 @media (min-width: 990px) {
+
+    .container {
+    min-height: 770px;
+    min-width: 1280px;
+    margin: auto;
+    display: block;
+}
+    .button {
+        display: none;
+    }
+    .container_header {
+    background-image: url(../img/bg_main_big.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 15px;
+    }
     .block_main {
         display: flex;
         flex-direction: column;
     }
+    .nav {
+    display: inline-block;
+}
+    .about_menu {
+    text-decoration: none;
+    color: #202020;
+    font-style: normal;
+    text-transform: uppercase;
+}
+    .menu-list {
+    margin: 30px 15px 40px 0px;
+}
+    .menu-item {
+    display: inline-block;
+    margin-right: 15px;
+}
+    .section_music {
+    width: 1280px;
+    margin: auto;
+    padding: 0 15px;
+}
+    .subtitle_music {
+    border-left: 2px solid #eec643;
+    border-right: 2px solid #eec643;
+    min-height: 570px;
+    font-family: Prata, regular, sans-serif;
+    font-size: 30px;
+    }
+    .container_main {
+
+    }
+    .block {
+
+    }
+
+
+    .section_speed {
+    min-width: 1170px;
+    }
+    .section_speed_structure_result {
+    width: 570px;
+    }
+    .subtitle_speed {
+        width: 100%;
+        border-top: 2px solid #eec643;
+        border-bottom: 2px solid #eec643;
+        font-family: Prata, regular, sans-serif;
+        font-size: 50px;
+    }
+    .block_structure {
+    width: 50%;
+    min-height: 468px;
+    }
+    .block_result {
+    width: 50%;
+    min-height: 468px;
+    }
+    .section_studio_lesson {
+    width: 570px;
+    }
+    .block_studio {
+     min-height: 568px;
+     width: 50%;
+    }
+    .block_lesson {
+    min-height: 568px;
+    width: 50%;
+    }
+    .logo_footer {
+        color: #eec643;
+    font-family: Prata, regular, sans-serif;
+    font-size: 30px;
+    }
+    .about_menu_footer {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
 }

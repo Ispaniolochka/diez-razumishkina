@@ -12,10 +12,22 @@
 <body>
 	<div class="container container_header">
 		<header class="page-header">	<span class="logo">DIEZ</span>
+			<nav class="nav">
+						<ul class="menu-list">
+							<li class="menu-item"><a class="about_menu" href="">Направления</a>
+							</li>
+							<li class="menu-item"><a class="about_menu" href="">О школе</a>
+							</li>
+							<li class="menu-item"><a class="about_menu" href="">Видео</a>
+							</li>
+							<li class="menu-item"><a class="about_menu" href="">Контакты</a>
+							</li>
+						</ul>
+					</nav>
 		</header>
 		<div class="promo">
 			<h1 class="title">Школа музыкального искусства</h1>
-			<span class="title_text">Научим петь, играть на
+			<span class="title_text_promo">Научим петь, играть на
 				инструментах, получать
 				удовольствие от музыки и
 				не бояться сцены</span>	
@@ -28,19 +40,19 @@
 			<h2 class="subtitle_music">Растим музыкантов</h2>
 			<div class="container_main">
 				<div class="block block_vokal">
-					<h3 class="subtitle_img">Вокал</h3>
+					<span class="subtitle_img"><b>Вокал</b></span>
 					<span class="title_text">Пой, как Селин Дион и Эми Вайнхаус</span>
 				</div>
 				<div class="block block_guitar">
-					<h3 class="subtitle_img">Гитара</h3>
+					<span class="subtitle_img"><b>Гитара</b></span>
 					<span class="title_text">Начни играть, как Джими Хендрикс</span>
 				</div>
 				<div class="block block_piano">
-					<h3 class="subtitle_img">Фортепиано</h3>
+					<span class="subtitle_img"><b>Фортепиано</b></span>
 					<span class="title_text">Чувствуй клавиши, как Людовико Эйнауди</span>
 				</div>
 				<div class="block block_lectures">
-					<h3 class="subtitle_img">Лекции</h3>
+					<span class="subtitle_img"><b>Лекции</b></span>
 					<span class="title_text">Подтяни свои знания в теории музыки</span>
 				</div>
 				<div class="block block_information">
@@ -48,7 +60,94 @@
 				</div>
 			</div>
 		</section>
+
+
+		<section class="container section_speed">
+			<div class="section_speed_structure_result">
+				<h2 class="subtitle_speed">Задаем темп</h2>
+				<div class="container_structure_result">
+					<div class="block block_structure">
+				<span class="subtitle_img"><b>Состав</b></span>
+				<span class="title_text">Учись только у профессионалов</span>
+			</div>
+			<div class="block block_result">
+				<span class="subtitle_img"><b>Результат</b></span>
+				<span class="title_text">Выступай на отчетных концертах</span>
+			</div>
+				</div>
+			
+			</div>
+			<div class="section_studio_lesson">
+				<div class="block block_studio">
+				<span class="subtitle_img_studio"><b>Студия</b></span>
+				<span class="title_text">Записывай песни каждый месяц</span>
+			</div>
+			<div class="block block_lesson">
+				<div class="text_button_lesson">Вводный урок</div>
+			</div>
+			</div>
+			
+		</section>
+
+		<section container container_school>
+			<h2 class="subtitle_school">В стенах школы</h2>
+			<div class="container_big_video">
+				<div class="block block_cherry">
+					<span class="subtitle_img_cherry"><b>Зимняя вишня</b></span>
+					<span class="title_text_concert">Финальный концерт 2018 года</span>
+					<a class="button_video" href="#"><img src="img/arrow.png" alt="стрелка для видео"></a>
+				</div>
+			</div>
+			<div class="container_three_video">
+				<div class="block block_rehearsal">
+					<span class="subtitle_img"><b>Янг Чжо</b></span>
+					<span class="title_text">Репетиция сольной партии скрипки</span>
+				</div>
+				<div class="block block_scenes">
+					<span class="subtitle_img"><b>Летний штиль</b></span>
+					<span class="title_text">За кулисами концерта</span>
+				</div>
+				<div class="block block_trofimov">
+					<span class="subtitle_img"><b>Сергей Трофимов</b></span>
+					<span class="title_text">ЛЮбЭ - выйду в поле с конем</span>
+				</div>
+			</div>
+		</section>
 	</main>
-</body>
+	<footer class="footer">
+		<section container container_card>
+			<h2 class="subtitle_footer">Ждем тебя</h2>
+			<span class="adress">СПБ, 6-я Линия ВО 42 +7 (812) 5665656</span>
+			<!-- <div class="container_big_video">
+				<div class="block block_cherry">
+					<h3 class="subtitle_img">Зимняя вишня</h3>
+					<span class="title_text">Финальный концерт 2018 года</span>
+				</div> -->
+			
+			<div id="map" class="map"></div>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+    </script>
+<script src="script.js"></script>
+			<div class="button_lesson_footer"><a class="button" href="">Вводный урок</a>
+			</div>
+		<span class="logo_footer">DIEZ</span>
+		<nav class="nav_footer">
+						<ul class="menu_footer">
+							<li class="item_footer"><a class="about_menu_footer" href="">youtube</a>
+							</li>
+							<li class="item_footer"><a class="about_menu_footer" href="">instagram</a>
+							</li>
+							<li class="item_footer"><a class="about_menu_footer" href="">facebook</a>
+							</li>
+							<li class="item_footer"><a class="about_menu_footer" href="">vkontakte</a>
+							</li>
+						</ul>
+					</nav>
+			</section>
+	</footer>
+
+
+
+		</body>
 
 </html>
