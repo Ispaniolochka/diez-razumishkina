@@ -30,7 +30,6 @@ img {
     height: auto;
 }
 .container {
-    min-height: 535px;
     min-width: 320px;
     margin: auto;
     display: block;
@@ -40,21 +39,47 @@ img {
     background-repeat: no-repeat;
     background-size: contain;
     padding: 15px;
+    min-height: 535px;
+    padding-bottom: 30px;
 }
 .logo {
     color: #eec643;
     font-family: Prata, regular, sans-serif;
     font-size: 30px;
-    margin-top: 20px;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 3;
 } 
 nav {
     display: none;
 }
+.nav {
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 70px;
+    color: #fff;
+}
+.menu-list {
+    list-style: none;
+    padding: 0 15px;
+}
+.menu-item {
+    margin-bottom: 23px;
+}
+.menu_link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
 .title {
     color: #fff;
     font-size: 30px;
-    margin-top: 85px;
+    margin-top: 130px;
     font-family: Prata, regular, sans-serif;
+    margin-bottom: 10px;
 }
 .title_desktop {
     display: none;
@@ -66,23 +91,28 @@ nav {
     display: none;
 }
 .title_text {
-    display: inline-block;
+    display: block;
+    width: 70%;
 }
 .title_text_promo {
     color: #fff;
+    display: block;
+    width: 60%;
 }
 .button_lesson {
-    margin-top: 140px;
+    margin-top: 100px;
 }
 .button {
     background-color: #eec643;
     color: #fff;
     min-width: 290px;
     text-transform: uppercase;
-    vertical-align: middle;
+    display: block;
     padding: 20px 94px;
     text-align: center;
     text-decoration: none;
+    margin-top: 15px;
+    margin-bottom: 30px;
 }
 .section_music {
     min-width: 320px;
@@ -99,11 +129,12 @@ nav {
     width: 230px;
     font-family: Prata, regular, sans-serif;
     font-size: 30px;
-    margin-top: 30px;
+    margin-top: -5px;
 }
 .subtitle_img {
     color: white;
     padding: 25px 0 0 12px;
+    font-weight: bold;
 }
 
 .block {
@@ -188,19 +219,27 @@ nav {
     width: 100%;
     padding-top: 30px;
 }
+
+
+
 .section_studio_lesson {
-margin-top: 15px;
+    margin-top: 15px;
+   display: inline-block;
+   vertical-align: top;
 }
 .subtitle_img_studio {
     color: white;
     padding-left: 10px;
+    font-weight: bold;
 }
 .block_studio {
     background-image: url(../img/studio.png);
     background-repeat: no-repeat;
     width: 73%;
     display: inline-block;
-    padding-top: 60px;
+    padding-top: 44px;
+    vertical-align: top;
+    padding-top: 30px;
 }
 .block_lesson {
      background-color: #eec643;
@@ -208,13 +247,18 @@ margin-top: 15px;
     min-height: 144px;
     display: inline-block;
     margin-left: 10px;
+    vertical-align: top;
 }
 .text_button_lesson {
     transform: rotate(-90deg);
     text-transform: uppercase;
-    margin-top: 61px;
+    margin-top: 70px;
     color: white;
+    
 }
+
+
+
 .container_school {
     min-width: 320px;
     margin: auto;
@@ -229,17 +273,67 @@ margin-top: 15px;
     margin-left: 15px;
     margin-top: 40px;
 }
+
+
+
+.container_big_video {
+    width: 100%;
+    font-size: 0;
+}
+.block_arrow_left {
+    width: 10%;
+    height: 15px;
+    vertical-align: top;
+    display: inline-block;
+    padding-left: 15px;
+    margin-top: 80px;
+    background-image: url(../img/arrow-left.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.block_arrow_right {
+    width: 10%;
+    height: 15px;
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 80px;
+    padding-left: 5px;
+    background-image: url(../img/arrow_right.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.block_cherry {
+    background-image: url(../img/big_video_mobile.png);
+    background-repeat: no-repeat;
+    width: 80%;
+    min-height: 185px;
+    vertical-align: top;
+    display: inline-block;
+    padding-top: 75px;
+}
 .subtitle_img_cherry {
     color: #fff;
-    margin: 10px;
+    margin: 0px 0 0 10px;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.button_video {
+    display: block;
+    text-align: center;
 }
 .title_text_concert {
     color: #fff;
+    font-size: 16px;
+    font-family: 'PT Sans', bold, sans-serif;
+    
+    margin-left: 10px;
+    margin-bottom: 15px;
+    display: block;
 }
-.container_big_video {
-    background-image: url(../img/big_video_mobile.png);
-    background-repeat: no-repeat;
-    margin-left: 40px;
+.big_arrow {
+
 }
 .container_three_video {
     display: none;
@@ -247,13 +341,15 @@ margin-top: 15px;
 .about_menu_footer {
     display: none;
 }
+.container_card {
+    padding: 0 15px;
+}
 .subtitle_footer {
     border-top: 2px solid #eec643;
     border-bottom: 2px solid #eec643;
     width: 230px;
     font-family: Prata, regular, sans-serif;
     font-size: 30px;
-    margin-left: 15px;
     margin-top: 30px;
 }
 .button_lesson_footer {
@@ -265,15 +361,24 @@ margin-bottom: 60px;
     display: none;
 }
 .adress {
-    margin-left: 25px;
+    margin-left: 10px;
+}
+.phone_link {
+    text-decoration: none;
+    display: block;
+    margin-left: 10px;
+    color: #000;
+    margin-top: 5px;
 }
 .map {
     height: 216px;
-    width: 280px;
-    margin-left: 20px;
+    width: 100%;
     margin-top: 15px;
 }
-@media (min-width: 990px) {
+.item_footer {
+    display: none;
+}
+@media (min-width: 1280px) {
 
     .container {
     min-height: 770px;
@@ -281,12 +386,18 @@ margin-bottom: 60px;
     margin: auto;
     display: block;
 }
+nav {
+
+}
+    .promo {
+        text-transform: lowercase;
+    }
     .logo {
         margin-left: 50px;
         margin-top: 30px;
     }
     .title {
-        display: none;
+        font-size: 55px;
     }
     .title_text_promo {
         display: none;
@@ -295,22 +406,26 @@ margin-bottom: 60px;
         font-family: Prata, regular, sans-serif;
         font-size: 55px;
         color: white;
+        display: inline-block;
+        text-transform: capitalize;
     }
     .lesson_desktop {
-
+        display: block;
     }
     .title_text_desktop {
         color: #fff;
+        display: block;
     }
     .button {
         display: none;
     }
     .block_aside {
+        display: block;
         background-color: #021a23;
         width: 270px;
          height: 420px;
          margin-left: 950px;
-       margin-bottom: 145px;
+       
     }
     .aside {
         background-color: #fbf8eb;
@@ -405,6 +520,7 @@ margin-bottom: 60px;
     .block_lesson {
     min-height: 568px;
     width: 50%;
+
     }
     .logo_footer {
         color: #eec643;
