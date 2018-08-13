@@ -41,6 +41,8 @@ img {
     padding: 15px;
     min-height: 535px;
     padding-bottom: 30px;
+    background-size: cover;
+    margin-bottom: 30px;
 }
 .logo {
     color: #eec643;
@@ -100,7 +102,7 @@ nav {
     width: 60%;
 }
 .button_lesson {
-    margin-top: 100px;
+    margin-top: 150px;
 }
 .button {
     background-color: #eec643;
@@ -111,8 +113,6 @@ nav {
     padding: 20px 94px;
     text-align: center;
     text-decoration: none;
-    margin-top: 15px;
-    margin-bottom: 30px;
 }
 .section_music {
     min-width: 320px;
@@ -185,6 +185,7 @@ nav {
 }
 .section_speed_structure_result {
     margin-top: 15px;
+    width: 100%;
 }
 .subtitle_speed {
     border-top: 2px solid #eec643;
@@ -219,9 +220,6 @@ nav {
     width: 100%;
     padding-top: 30px;
 }
-
-
-
 .section_studio_lesson {
     margin-top: 15px;
    display: inline-block;
@@ -254,7 +252,6 @@ nav {
     text-transform: uppercase;
     margin-top: 70px;
     color: white;
-    
 }
 
 
@@ -270,7 +267,6 @@ nav {
     width: 230px;
     font-family: Prata, regular, sans-serif;
     font-size: 30px;
-    margin-left: 15px;
     margin-top: 40px;
 }
 
@@ -353,9 +349,9 @@ nav {
     margin-top: 30px;
 }
 .button_lesson_footer {
-margin-top: 50px;
-margin-left: 15px;
-margin-bottom: 60px;
+    margin-top: 50px;
+    margin-left: 15px;
+    margin-bottom: 60px;
 }
 .logo_footer {
     display: none;
@@ -375,6 +371,10 @@ margin-bottom: 60px;
     width: 100%;
     margin-top: 15px;
 }
+.button_footer {
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
 .item_footer {
     display: none;
 }
@@ -384,7 +384,7 @@ margin-bottom: 60px;
     min-height: 770px;
     min-width: 1280px;
     margin: auto;
-    display: block;
+    display: flex;
 }
 nav {
 
@@ -404,13 +404,15 @@ nav {
     }
     .title_desktop {
         font-family: Prata, regular, sans-serif;
-        font-size: 55px;
         color: white;
         display: inline-block;
         text-transform: capitalize;
     }
     .lesson_desktop {
         display: block;
+    }
+    .button_lesson {
+
     }
     .title_text_desktop {
         color: #fff;
@@ -455,7 +457,7 @@ nav {
     display: inline-block;
     margin-left: 610px;
 }
-.menu-item {
+   .menu-item {
     padding-right: 28px;
 }
     .about_menu {
@@ -472,9 +474,11 @@ nav {
     margin-right: 15px;
 }
     .section_music {
-    width: 1280px;
+    width: 1170px;
     margin: auto;
     padding: 0 15px;
+    width: 100%;
+    flex-wrap: wrap;
 }
     .subtitle_music {
     border-left: 2px solid #eec643;
@@ -484,9 +488,11 @@ nav {
     font-size: 30px;
     }
     .container_main {
-
+    display: flex;
+    width: 1070px;
     }
     .block {
+     display: block;
 
     }
     .section_speed {
