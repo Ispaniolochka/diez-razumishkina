@@ -51,11 +51,9 @@ img {
     margin-top: 10px;
     position: absolute;
     z-index: 3;
-} 
-nav {
-    display: none;
 }
 .nav {
+    display: none;
     background-color: #000;
     position: absolute;
     width: 100%;
@@ -63,6 +61,9 @@ nav {
     left: 0;
     padding-top: 70px;
     color: #fff;
+}
+.nav_desktop {
+    display: none;
 }
 .menu-list {
     list-style: none;
@@ -114,6 +115,9 @@ nav {
     text-align: center;
     text-decoration: none;
 }
+.aside {
+    display: none;
+}
 .section_music {
     min-width: 320px;
     margin: auto;
@@ -122,6 +126,7 @@ nav {
 .container_main {
     display: flex;
     flex-wrap: wrap;
+    /* width: 80%;*/
 }
 .subtitle_music {
     border-top: 2px solid #eec643;
@@ -136,7 +141,6 @@ nav {
     padding: 25px 0 0 12px;
     font-weight: bold;
 }
-
 .block {
     min-height: 144px;
     background-size: cover;
@@ -164,6 +168,18 @@ nav {
     margin-right: 17px;
     display: inline-block;
     padding-top: 30px;
+}
+.price {
+    display: none;
+}
+.block_vokal_desktop {
+    display: none;
+}
+.block_guitar_desktop {
+    display: none;
+}
+.block_piano_desktop {
+    display: none;
 }
 .block_lectures {
     display: none;
@@ -214,16 +230,25 @@ nav {
     padding-top: 30px;
     padding-right: 30px;
 }
+.block_structure_desktop {
+    display: none;
+}
 .block_result {
     background-image: url(../img/result.png);
     background-repeat: no-repeat;
     width: 100%;
     padding-top: 30px;
 }
+.block_result_desktop {
+    display: none;
+}
+.block_studio_desktop {
+    display: none;
+}
 .section_studio_lesson {
     margin-top: 15px;
-   display: inline-block;
-   vertical-align: top;
+    display: inline-block;
+    vertical-align: top;
 }
 .subtitle_img_studio {
     color: white;
@@ -240,7 +265,7 @@ nav {
     padding-top: 30px;
 }
 .block_lesson {
-     background-color: #eec643;
+    background-color: #eec643;
     width: 21%;
     min-height: 144px;
     display: inline-block;
@@ -253,9 +278,6 @@ nav {
     margin-top: 70px;
     color: white;
 }
-
-
-
 .container_school {
     min-width: 320px;
     margin: auto;
@@ -269,9 +291,6 @@ nav {
     font-size: 30px;
     margin-top: 40px;
 }
-
-
-
 .container_big_video {
     width: 100%;
     font-size: 0;
@@ -319,17 +338,16 @@ nav {
     display: block;
     text-align: center;
 }
+.video_cherry_desktop {
+    display: none;
+}
 .title_text_concert {
     color: #fff;
     font-size: 16px;
     font-family: 'PT Sans', bold, sans-serif;
-    
     margin-left: 10px;
     margin-bottom: 15px;
     display: block;
-}
-.big_arrow {
-
 }
 .container_three_video {
     display: none;
@@ -379,25 +397,59 @@ nav {
     display: none;
 }
 @media (min-width: 1280px) {
-
     .container {
-    min-height: 770px;
-    min-width: 1280px;
-    margin: auto;
-    display: flex;
-}
-nav {
-
-}
+        min-height: 770px;
+        max-width: 1280px;
+        margin: auto;
+        padding: 0;
+    }
+    .page-header {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .nav {
+        display: none;
+    }
+    .nav_desktop {
+        display: inline-block;
+    }
+    .menu-list_desktop {
+        list-style: none;
+        margin-left: 750px;
+        margin-top: 30px;
+    }
+    .menu-item_desktop {
+        display: inline-block;
+    }
+    .menu_link_desktop {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #000;
+        margin-right: 30px;
+        letter-spacing: 2px;
+    }
     .promo {
         text-transform: lowercase;
+        width: 100%;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
     }
     .logo {
-        margin-left: 50px;
-        margin-top: 30px;
+        margin-left: 35px;
+        margin-top: 15px;
     }
     .title {
         font-size: 55px;
+        margin: 190px 200px 20px 35px;
     }
     .title_text_promo {
         display: none;
@@ -408,15 +460,11 @@ nav {
         display: inline-block;
         text-transform: capitalize;
     }
-    .lesson_desktop {
-        display: block;
-    }
-    .button_lesson {
-
-    }
     .title_text_desktop {
         color: #fff;
         display: block;
+        font-size: 20px;
+        margin: 0 300px 0 35px;
     }
     .button {
         display: none;
@@ -425,17 +473,68 @@ nav {
         display: block;
         background-color: #021a23;
         width: 270px;
-         height: 420px;
-         margin-left: 950px;
-       
+        height: 420px;
+        margin-left: 950px;
     }
     .aside {
         background-color: #fbf8eb;
-        height: 350px;
-        width: 266px;
-        margin: 0 auto;
-        margin-bottom: 15px;
-       
+        height: 420px;
+        min-width: 270px;
+        border: 2px solid #021a23;
+        margin-right: 35px;
+        margin-top: 110px;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .test_lesson {
+        color: #021a23;
+        font-size: 20px;
+        margin-left: 30px;
+        margin-top: -150px;
+    }
+    .lesson_desktop {
+        display: block;
+        color: #021a23;
+        font-size: 30px;
+        font-family: 'PT Sans', Bold, sans-serif;
+        margin: 20px 0 30px 30px;
+    }
+    .form_header {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .aside__button {
+        background-color: #021a23;
+        color: #fff;
+        width: 100%;
+        height: 70px;
+        padding: 10px 0;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .name {
+        background-color: #fbf8eb;
+    }
+    .phone {
+        background-color: #fbf8eb;
     }
     .button_register {
         color: #eef2f2;
@@ -444,62 +543,163 @@ nav {
         font-size: 20px;
     }
     .container_header {
-    background-image: url(../img/bg_main_big.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding: 15px;
+        background-image: url(../img/bg_main_big.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 15px;
     }
-    .block_main {
-        display: flex;
-        flex-direction: column;
-    }
-    .nav {
-    display: inline-block;
-    margin-left: 610px;
-}
-   .menu-item {
-    padding-right: 28px;
-}
-    .about_menu {
-    text-decoration: none;
-    color: #202020;
-    font-style: normal;
-    text-transform: uppercase;
-}
-    .menu-list {
-    margin: 30px 15px 40px 0px;
-}
     .menu-item {
-    display: inline-block;
-    margin-right: 15px;
-}
+        padding-right: 28px;
+    }
+    .about_menu {
+        text-decoration: none;
+        color: #202020;
+        font-style: normal;
+        text-transform: uppercase;
+    }
+    .menu-list {
+        margin: 30px 15px 40px 0px;
+    }
+    .menu-item {
+        display: inline-block;
+        margin-right: 15px;
+    }
     .section_music {
-    width: 1170px;
-    margin: auto;
-    padding: 0 15px;
-    width: 100%;
-    flex-wrap: wrap;
-}
+        margin: auto;
+        padding: 90px 45px;
+        width: 100%;
+        height: 570px;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
+        -o-flex-direction: row;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .block_guitar_desktop,
+    .block_vokal_desktop,
+    .block_piano_desktop {
+        padding: 20px 30px;
+    }
+    .subtitle_img_section_music {
+        font-size: 30px;
+        font-family: 'PT Sans', Bold, sans-serif;
+        color: #fff;
+    }
+    .title_text_section_music {
+        display: block;
+        font-size: 20px;
+        color: #fff;
+        line-height: 30px;
+        margin-right: 180px;
+        margin-top: 20px;
+    }
+    .vokal_desktop {
+        margin-right: 230px;
+    }
+    .price {
+        font-size: 20px;
+        font-family: 'PT Sans', Bold, sans-serif;
+        color: #fff;
+        margin-top: 20px;
+    }
+    .block-title-music {
+        border-right: 2px solid #eec643;
+        border-left: 2px solid #eec643;
+        width: 7%;
+        height: 570px;
+    }
     .subtitle_music {
-    border-left: 2px solid #eec643;
-    border-right: 2px solid #eec643;
-    min-height: 570px;
-    font-family: Prata, regular, sans-serif;
-    font-size: 30px;
+        transform: rotate(270deg);
+        border: none;
+        white-space: nowrap;
+        font-size: 50px;
+        margin-top: 490px;
+        width: 70px;
     }
     .container_main {
-    display: flex;
-    width: 1070px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        height: 570px;
     }
     .block {
-     display: block;
-
+        display: block;
+    }
+    .block_vokal {
+        display: none;
+    }
+    .block_guitar_desktop {
+        display: block;
+        background-image: url(../img/guitar_desktop.png);
+        margin-right: 3%;
+        width: 44%;
+        height: 270px;
+    }
+    .price {
+        display: block;
+    }
+    .block_guitar {
+        display: none;
+    }
+    .block_vokal_desktop {
+        display: block;
+        background-image: url(../img/vokal_desktop.png);
+        width: 53%;
+        height: 270px;
+    }
+    .block_piano {
+        display: none;
+    }
+    .block_piano_desktop {
+        display: block;
+        background-image: url(../img/piano_desktop.png);
+        height: 270px;
+        width: 44%;
+        margin-right: 3%;
+        margin-top: 25px;
+    }
+    .block_lectures {
+        display: block;
+        background-image: url(../img/lectures_desktop.png);
+        height: 270px;
+        width: 25%;
+        margin-right: 3%;
+        margin-top: 25px;
+        padding-top: 20px;
+        padding-left: 30px;
+    }
+    .title_text_lectures {
+        display: block;
+        font-size: 20px;
+        color: #fff;
+        line-height: 30px;
+        margin-top: 20px;
+    }
+    .block_information {
+        height: 270px;
+        width: 25%;
+        margin-top: 25px;
+        padding: 0 30px;
+    }
+    .text_button_information {
+        transform: rotate(-360deg);
+        color: #fff;
+        font-size: 30px;
+        font-family: 'PT Sans', Bold, sans-serif;
+        margin-top: 20px;
+        text-transform: none;
     }
     .section_speed {
-    min-width: 1170px;
+        min-width: 1170px;
     }
     .section_speed_structure_result {
-    width: 570px;
+        width: 570px;
     }
     .subtitle_speed {
         width: 100%;
@@ -509,33 +709,133 @@ nav {
         font-size: 50px;
     }
     .block_structure {
-    width: 50%;
-    min-height: 468px;
+        display: none;
+    }
+    .block_structure_desktop {
+        display: block;
+        background-image: url(../img/structure_desktop.png);
     }
     .block_result {
-    width: 50%;
-    min-height: 468px;
+        display: none;
     }
-    .section_studio_lesson {
-    width: 570px;
+    .block_result_desktop {
+        display: block;
+        background-image: url(../img/result_desktop.png);
     }
-    .block_studio {
-     min-height: 568px;
-     width: 50%;
+    .section_studio_lesson {} .block_studio {
+        display: none;
+    }
+    .block_studio_desktop {
+        display: block;
+        background-image: url(../img/studio_desktop.png);
     }
     .block_lesson {
-    min-height: 568px;
-    width: 50%;
-
+        display: none;
     }
-    .logo_footer {
+    .container_school {
+        margin: auto;
+        padding: 90px 45px;
+        width: 100%;
+        height: 570px;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
+        -o-flex-direction: row;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .block_subtitle_school {
+        border-right: 2px solid #eec643;
+        border-left: 2px solid #eec643;
+        width: 7%;
+        height: 570px;
+    }
+    .subtitle_school {
+        transform: rotate(270deg);
+        border: none;
+        white-space: nowrap;
+        font-size: 50px;
+        margin-top: 490px;
+        width: 70px;
+    }
+    .container_big_video {
+        display: none;
+    }
+    .video_cherry_desktop {
+        width: 65%;
+    }
+    .video_cherry_desktop {
+        display: block;
+        background-image: url(../img/video_cherry.png);
+        /*width: 770px;*/
+        height: 570px;
+    }
+    .subtitle_img_cherry {
+        font-size: 30px;
+        font-family: 'PT Sans', Bold, sans-serif;
+        letter-spacing: 1px;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    .title_text_concert {
+        font-size: 20px;
+        margin: 20px 500px 0 30px;
+        line-height: 30px;
+    }
+    .button_video_desktop {
+        display: block;
+        text-align: center;
+        margin-top: 90px;
+    }
+    .container_three_video {
+        display: block;
+        width: 23%;
+    }
+    .block_rehearsal {
+        display: block;
+        background-image: url(../img/video_desktop_yang.png);
+        height: 170px;
+    }
+    .block_scenes {
+        display: block;
+        background-image: url(../img/video_desctop_summer.png);
+        height: 170px;
+        margin-top: 30px;
+    }
+    .block_trofimov {
+        display: block;
+        background-image: url(../img/video_desktop_lube.png);
+        height: 170px;
+        margin-top: 30px;
+    }
+    .big_arrow {
+        margin-top: 70px;
+    }
+    .subtitle_img_video {
+        font-size: 14px;
+        font-family: 'PT Sans', Bold, sans-serif;
+        font-weight: bold;
+        color: #fff;
+        margin-left: 10px;
+    }
+    .title_text_video {
+        font-size: 14px;
+        color: #fff;
+        display: block;
+        margin-left: 10px;
+    }
+    .container_card {} .logo_footer {
         color: #eec643;
-    font-family: Prata, regular, sans-serif;
-    font-size: 30px;
+        font-family: Prata, regular, sans-serif;
+        font-size: 30px;
     }
     .about_menu_footer {
         font-size: 12px;
         text-transform: uppercase;
     }
-
 }
