@@ -12,8 +12,9 @@
 <body>
 	<div class="container container_header">
 		<header class="page-header">	<span class="logo">Diez</span>
-			<nav class="nav">
-				<ul class="menu-list">
+			<div class="burger">
+				<a href="" class="toggler" id="toggler"><span></span></a>
+                <ul class="menu-list" id="menu-list">
 					<li class="menu-item"><a class="menu_link" href="">Направления</a>
 					</li>
 					<li class="menu-item"><a class="menu_link" href="">О школе</a>
@@ -23,7 +24,10 @@
 					<li class="menu-item"><a class="menu_link" href="">Контакты</a>
 					</li>
 				</ul>
-			</nav>
+			</div>
+			<!-- <nav class="nav"> -->
+				
+			<!-- </nav> -->
 			<nav class="nav_desktop">
 				<ul class="menu-list_desktop">
 					<li class="menu-item_desktop"><a class="menu_link_desktop" href="">Направления</a>
@@ -144,9 +148,9 @@
 				<h3 class="lesson_desktop_yellow">Вводный урок</h3>
 				<p class="test_lesson_yellow">Попробуй любые направления бесплатно</p>
 				<form class="form_header" action="post">
-					<input class="name" type="text" placeholder="Имя">
-					<input class="phone" type="tel" placeholder="Телефон">
-					<select class="direction">
+					<input class="name name_yellow" type="text" placeholder="Имя">
+					<input class="phone phone_yellow" type="tel" placeholder="Телефон">
+					<select class="direction direction_yellow">
 						<option class="direction_item">Направления</option>
 					</select>
 					<button class="aside__button_yellow" type="button">Записаться</button>
@@ -200,12 +204,31 @@
 	</main>
 	<footer class="footer">
 		<div class="container container_card">
-			<h2 class="subtitle_footer">Ждем тебя</h2>
+			<div class="block_container_card">
+				<h2 class="subtitle_footer">Ждем тебя</h2>
 			<span class="adress">СПБ, 6-я Линия ВО 42</span>
 			<a class="phone_link" href="tel:89252567896">+7 (812) 566 56 56</a>
+			<div class="adress_footer_desktop">
+				<a class="phone_link_desktop" href="tel:89252567896">+7 (812) 566 56 56</a>
+				<span class="adress_desktop">СПБ, 6-я Линия ВО 42</span>
+			</div>
 			<div id="map" class="map"></div>
+			</div>
+			
 			<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
 			</script>
+			<div class="aside_yellow aside_yellow_footer">
+				<h3 class="lesson_desktop_yellow">Вводный урок</h3>
+				<p class="test_lesson_yellow">Попробуй любые направления бесплатно</p>
+				<form class="form_header" action="post">
+					<input class="name name_yellow" type="text" placeholder="Имя">
+					<input class="phone phone_yellow" type="tel" placeholder="Телефон">
+					<select class="direction direction_yellow">
+						<option class="direction_item">Направления</option>
+					</select>
+					<button class="aside__button_yellow" type="button">Записаться</button>
+				</form>
+		</div>
            <!--  <div class="block_map_desktop">
             	<div class="subtitle_phone_adress_desktop">
 				<h2 class="subtitle_footer_desktop">Ждем тебя</h2>
@@ -218,6 +241,7 @@
 			<!-- <div id="map" class="map"></div> -->
 			<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
 			</script> -->
+			<script src="js/js.js"></script>
 			<script src="js/map-script.js"></script>	<a class="button button_footer" href="#">Вводный урок</a>
 			<span class="logo_footer">DIEZ</span>
 			<nav class="nav_footer">
