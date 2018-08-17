@@ -199,6 +199,20 @@ img {
     text-transform: uppercase;
     margin-top: 75px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .section_speed_structure_result {
     margin-top: 15px;
     width: 100%;
@@ -277,6 +291,9 @@ img {
     text-transform: uppercase;
     margin-top: 70px;
     color: white;
+}
+.aside_yellow {
+    display: none;
 }
 .container_school {
     min-width: 320px;
@@ -366,6 +383,12 @@ img {
     font-size: 30px;
     margin-top: 30px;
 }
+.subtitle_footer_desktop {
+    display: none;
+}
+.subtitle_phone_adress_desktop {
+    display: none;
+}
 .button_lesson_footer {
     margin-top: 50px;
     margin-left: 15px;
@@ -434,7 +457,6 @@ img {
         letter-spacing: 2px;
     }
     .promo {
-        text-transform: lowercase;
         width: 100%;
         display: -webkit-flex;
         display: -moz-flex;
@@ -448,6 +470,7 @@ img {
         margin-top: 15px;
     }
     .title {
+        text-transform: lowercase;
         font-size: 55px;
         margin: 190px 200px 20px 35px;
     }
@@ -464,17 +487,18 @@ img {
         color: #fff;
         display: block;
         font-size: 20px;
-        margin: 0 300px 0 35px;
+        margin: 0 410px 0 35px;
+        line-height: 30px;
     }
     .button {
         display: none;
     }
     .block_aside {
-        display: block;
+       /* display: block;
         background-color: #021a23;
         width: 270px;
         height: 420px;
-        margin-left: 950px;
+        margin-left: 950px;*/
     }
     .aside {
         background-color: #fbf8eb;
@@ -695,11 +719,34 @@ img {
         margin-top: 20px;
         text-transform: none;
     }
+
+
+
+
+
+
+
+
     .section_speed {
-        min-width: 1170px;
+        margin: auto;
+        padding-left: 45px;
+        width: 100%;
+        height: 570px;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
+        -o-flex-direction: row;
+        flex-direction: row;
+       /* justify-content: space-between;*/
     }
     .section_speed_structure_result {
-        width: 570px;
+       width: 48%;
+       margin-right: 3%;
     }
     .subtitle_speed {
         width: 100%;
@@ -707,36 +754,87 @@ img {
         border-bottom: 2px solid #eec643;
         font-family: Prata, regular, sans-serif;
         font-size: 50px;
+        margin-bottom: 30px;
+        margin-top: 0;
     }
     .block_structure {
         display: none;
     }
     .block_structure_desktop {
-        display: block;
+        display: inline-block;
         background-image: url(../img/structure_desktop.png);
+        width: 47%;
+        margin-right: 5%;
+        height: 470px;
     }
     .block_result {
         display: none;
     }
     .block_result_desktop {
-        display: block;
+        display: inline-block;
         background-image: url(../img/result_desktop.png);
+        width: 47%;
+        height: 470px;
     }
-    .section_studio_lesson {} .block_studio {
+    .subtitle_img {
+
+    }
+    .section_studio_lesson {
+       width: 49%;
+       padding-right: 3%;
+    } 
+
+    .block_studio {
         display: none;
     }
     .block_studio_desktop {
-        display: block;
         background-image: url(../img/studio_desktop.png);
+        height: 570px;
+        width: 47%;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 5%;
     }
     .block_lesson {
         display: none;
     }
+    .aside_yellow {
+        background-color: #fbf8eb;
+        height: 570px;
+        width: 47%;
+        border: 2px solid #eec643;
+        display: inline-block;
+        /*display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;*/
+        /*justify-content: space-between;*/
+    }
+    .lesson_desktop_yellow {
+      color: #eec643;
+      font-size: 30px;
+        font-family: 'PT Sans', Bold, sans-serif;
+    }
+    .aside__button_yellow {
+        background-color: #eec643;
+        color: #fff;
+        width: 100%;
+        height: 70px;
+        padding: 10px 0;
+        text-transform: uppercase;
+        text-align: center;
+    }
     .container_school {
         margin: auto;
-        padding: 90px 45px;
+        padding: 0 45px;
         width: 100%;
-        height: 570px;
+        min-height: 570px;
         display: -webkit-flex;
         display: -moz-flex;
         display: -ms-flex;
@@ -829,7 +927,57 @@ img {
         display: block;
         margin-left: 10px;
     }
-    .container_card {} .logo_footer {
+    .container_card {
+        margin: auto;
+        padding-left: 45px;
+        width: 100%;
+        height: 570px;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
+        -o-flex-direction: row;
+        flex-direction: row;
+    } 
+    .subtitle_map {
+        width: 65%;
+        border-top: 2px solid #eec643;
+        border-bottom: 2px solid #eec643;
+        font-family: Prata, regular, sans-serif;
+        font-size: 50px;
+        margin-bottom: 30px;
+        margin-top: 0;
+        height: 70px;
+    }
+    .subtitle_footer, .adress, .phone_link {
+        display: none;
+    }
+     .block_map_desktop {
+        width: 82%;
+        margin-right: 3%;
+    }
+    .subtitle_footer_desktop {
+        width: 100%;
+        border-top: 2px solid #eec643;
+        border-bottom: 2px solid #eec643;
+        font-family: Prata, regular, sans-serif;
+        font-size: 50px;
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+
+    .map {
+        width: 870px;
+        height: 470px;
+    }
+    .button_footer {
+        display: none;
+    }
+    .logo_footer {
         color: #eec643;
         font-family: Prata, regular, sans-serif;
         font-size: 30px;
