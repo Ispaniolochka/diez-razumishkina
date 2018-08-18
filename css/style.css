@@ -142,33 +142,43 @@ img {
   text-decoration: none;
   margin-bottom: 1px;
 }*/
+.page-header {
+    vertical-align: top;
+}
+.header-menu {
+    vertical-align: top;
+    
+}
 .logo {
     color: #eec643;
     font-family: Prata, regular, sans-serif;
     font-size: 30px;
-    margin-top: 10px;
+    margin-top: -10px;
     position: absolute;
     z-index: 3;
+    margin-top: 0px;
 }
 
+
+
 .burger_icon {
-    height: 2px;
-    width: 25px;
+    height: 25px;
+    width: 2px;
     background-color: #fff;
     position: relative;
+    left: 270px;
 }
-.burger_icon:before, :after {
+.burger_icon:before, .burger_icon:after {
     content: ' ';
-    display: block;
+    display: inline-block;
     position: absolute;
-    height: 2px;
-    width: 25px;
+    height: 25px;
+    width: 2px;
     background-color: #fff;
-    left: 0;
-    top: 13px;
+    left: 8px;
 }
 .burger_icon:after {
-    top: 26px;
+    left: 16px;
 }
 .burger {
     display: none;
@@ -179,16 +189,26 @@ img {
     left: 0;
     padding-top: 70px;
     color: #fff;
+
 }
 .nav_desktop {
     display: none;
 }
+
 .menu-list {
     list-style: none;
     padding: 0 15px;
+    position: absolute;
 }
 .menu-item {
     margin-bottom: 23px;
+}
+.menu-item:hover {
+    color: #000;
+    background-color: #fff;
+}
+.menu_opened {
+    display: block;
 }
 .menu_link {
     text-decoration: none;
@@ -198,7 +218,7 @@ img {
 .title {
     color: #fff;
     font-size: 30px;
-    margin-top: 130px;
+    margin-top: 90px;
     font-family: Prata, regular, sans-serif;
     margin-bottom: 10px;
 }
