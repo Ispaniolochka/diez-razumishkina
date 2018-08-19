@@ -209,6 +209,7 @@ img {
 .block {
     min-height: 144px;
     background-size: cover;
+    margin: 0 auto;
 }
 .block_vokal {
     background-image: url(../img/vokal.png);
@@ -363,6 +364,7 @@ img {
 .container_big_video {
     width: 100%;
     font-size: 0;
+    position: relative;
 }
 .block_arrow_left {
     width: 10%;
@@ -395,6 +397,56 @@ img {
     display: inline-block;
     padding-top: 75px;
 }
+.block_rehearsal {
+        display: block;
+        background-image: url(../img/video_desktop_yang.png);
+        }
+      .block_scenes {
+        display: block;
+        background-image: url(../img/video_desctop_summer.png);
+        }  
+        .block_trofimov {
+        display: block;
+        background-image: url(../img/video_desktop_lube.png);
+    }
+.slick-slide img {
+    display: inline;
+}
+.slick-prev {
+    position: absolute;
+    top: 50%;
+    right: 100%;
+      width: 10%;
+    height: 15px;
+    vertical-align: top;
+    display: inline-block;
+    padding-left: 15px;
+    margin-top: 80px;
+    background-image: url(../img/arrow-left.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;  
+    border: none;
+}
+
+.slick-next {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+      width: 10%;
+    height: 15px;
+    vertical-align: top;
+    display: inline-block;
+    padding-left: 15px;
+    margin-top: 80px;
+    background-image: url(../img/arrow_right.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;  
+    border: none;
+}
+
+
 .subtitle_img_cherry {
     color: #fff;
     margin: 0px 0 0 10px;
@@ -495,6 +547,9 @@ img {
 }
 .button_burger-open .burger_icon {
     transform: rotate(45deg);
+}
+.block_cherry_desktop {
+    display: none;
 }
 @media (min-width: 1280px) {
     .container {
@@ -1017,7 +1072,7 @@ display: block;
         width: 70px;
     }
     .container_big_video {
-        display: none;
+        /*display: none;*/
     }
     .video_cherry_desktop {
         width: 65%;

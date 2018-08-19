@@ -6,3 +6,9 @@ $(document).ready(function(){
     
 	   })
 	})
+$(document).ready(function(){
+$('.container_big_video').slick({
+	arrows: true,
+
+});
+});
