@@ -366,7 +366,7 @@ img {
     font-size: 0;
     position: relative;
 }
-.block_arrow_left {
+/*.block_arrow_left {
     width: 10%;
     height: 15px;
     vertical-align: top;
@@ -387,7 +387,7 @@ img {
     background-image: url(../img/arrow_right.png);
     background-repeat: no-repeat;
     background-position: center;
-}
+}*/
 .block_cherry {
     background-image: url(../img/big_video_mobile.png);
     background-repeat: no-repeat;
@@ -400,14 +400,46 @@ img {
 .block_rehearsal {
         display: block;
         background-image: url(../img/video_desktop_yang.png);
+        width: 80%;
+       min-height: 193px;
+       vertical-align: top;
+    display: inline-block;
+    padding-top: 75px;
         }
       .block_scenes {
         display: block;
         background-image: url(../img/video_desctop_summer.png);
+        width: 80%;
+    min-height: 193px;
+    vertical-align: top;
+    display: inline-block;
+    padding-top: 75px;
         }  
         .block_trofimov {
         display: block;
         background-image: url(../img/video_desktop_lube.png);
+        width: 80%;
+    min-height: 193px;
+    vertical-align: top;
+    display: inline-block;
+    padding-top: 75px;
+    }
+    .button_video {
+    display: block;
+    text-align: center;
+}
+.subtitle_img_video {
+        font-size: 14px;
+        font-family: 'PT Sans', Bold, sans-serif;
+        font-weight: bold;
+        color: #fff;
+        margin-left: 10px;
+    }
+    .title_text_video {
+        font-size: 14px;
+        color: #fff;
+        display: block;
+        margin-left: 10px;
     }
 .slick-slide img {
     display: inline;
@@ -416,7 +448,7 @@ img {
     position: absolute;
     top: 50%;
     right: 100%;
-      width: 10%;
+    width: 10%;
     height: 15px;
     vertical-align: top;
     display: inline-block;
@@ -548,7 +580,7 @@ img {
 .button_burger-open .burger_icon {
     transform: rotate(45deg);
 }
-.block_cherry_desktop {
+.block_cherry {
     display: none;
 }
 @media (min-width: 1280px) {
@@ -1073,6 +1105,16 @@ display: block;
     }
     .container_big_video {
         /*display: none;*/
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
     }
     .video_cherry_desktop {
         width: 65%;
@@ -1091,8 +1133,18 @@ display: block;
         margin-right: 500px;
         letter-spacing: 1px;
        display: block;
-
-
+    }
+    .block_cherry {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
     }
     .title_text_concert {
         font-size: 20px;
