@@ -11,8 +11,8 @@
             balloonContent: 'Содержимое балуна'
         }, {
             iconLayout: 'default#image',
-            iconImageHref: 'yellow-balloon.jpg',
-            iconImageSize: [30, 30]
+            iconImageHref: 'img/geotag.png',
+            iconImageSize: [38, 49]
         });
 
         myMap.geoObjects.add(myPlacemark);

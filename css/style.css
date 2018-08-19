@@ -44,104 +44,6 @@ img {
     background-size: cover;
     margin-bottom: 30px;
 }
-
-
-
-
-
-/*.burger {
-  position: fixed;
-  top: 25px;
-  right: 20px;
-  left: 0;
-  height: 25px;
-}
-.toggler {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  width: 25px;
-  height: 25px;
-  line-height: 3em;
-  user-select: none;
-  transform: rotate(90deg);
-}
-.toggler > span {
-  display: inline-block;
-  vertical-align: bottom;
-  width: 100%;
-  height: 2px;
-  background: #fff;
-  border-radius: .2rem;
-  position: relative;
-  transition: background .3s .5s;
-}
-.toggler > span:before,
-.toggler > span:after {
-  width: 100%;
-  height: 2px;
-  background: #fff;
-  border-radius: .2rem;
-  position: absolute;
-  left: 0;
-  content: '';
-  transform-origin: 50% 50%;
-  transition: top .3s .6s, transform .3s;
-}
-.toggler > span:before {
-  top: 12px;
-}
-.toggler > span:after {
-  top: -12px;
-}
-.toggler--close > span {
-  transition: background .3s 0;
-  background: transparent;
-}
-.toggler--close > span:before,
-.toggler--close > span:after {
-  transition: top .3s, transform .3s .5s;
-  top: 0;
-}
-.toggler--close > span:before {
-  transform: rotate3d(0, 0, 1, 45deg);
-}
-.toggler--close > span:after {
-  transform: rotate3d(0, 0, 1, -45deg);
-}
-.menu-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  /*display: none;
-}
-.menu-list--visible {
-  display: block;
-}
-.menu-item {
-  display: block;
-}
-.menu-item:first-child a {
-  padding-right: 3em;
-}
-.menu-item a {
-  display: block;
-  padding: 0 1em;
-  height: 3em;
-  line-height: 3;
-  background-color: #777;
-  color: #fff;
-  font-weight: 700;
-  text-decoration: none;
-  margin-bottom: 1px;
-}*/
 .page-header {
     vertical-align: top;
 }
@@ -158,15 +60,18 @@ img {
     z-index: 3;
     margin-top: 0px;
 }
-
-
-
+.button_burger {
+    z-index: 1;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
 .burger_icon {
     height: 25px;
     width: 2px;
     background-color: #fff;
     position: relative;
-    left: 270px;
+    
 }
 .burger_icon:before, .burger_icon:after {
     content: ' ';
@@ -182,6 +87,7 @@ img {
 }
 .burger {
     display: none;
+    height: 225px;
     background-color: #000;
     position: absolute;
     width: 100%;
@@ -189,18 +95,18 @@ img {
     left: 0;
     padding-top: 70px;
     color: #fff;
-
 }
 .nav_desktop {
     display: none;
 }
-
 .menu-list {
     list-style: none;
     padding: 0 15px;
     position: absolute;
+    margin-top: 0;
 }
 .menu-item {
+    display: block;
     margin-bottom: 23px;
 }
 .menu-item:hover {
@@ -210,15 +116,37 @@ img {
 .menu_opened {
     display: block;
 }
+.menu_cloced {
+    display: block;
+}
 .menu_link {
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
 }
+/*.burger_close {
+    background-color: #fff;
+    width: 25px;
+    height: 2px;
+    left: 280px;
+    top: 0px;
+    transform: rotate(50deg);
+    position: relative;
+}
+.burger_close:before {
+    content: ' ';
+    background-color: #fff;
+    left: 270px;
+    top: 0px;
+    transform: rotate(-50deg);
+    position: absolute;
+    width: 25px;
+    height: 2px;
+}*/
 .title {
     color: #fff;
     font-size: 30px;
-    margin-top: 90px;
+    margin-top: 120px;
     font-family: Prata, regular, sans-serif;
     margin-bottom: 10px;
 }
@@ -546,6 +474,28 @@ img {
 .item_footer {
     display: none;
 }
+.button_burger {
+    z-index: 1;
+}
+/*.button_burger.button_burger-open {
+   background-color: #fff;
+    width: 25px;
+    height: 2px;
+    left: 280px;
+    top: 0px;
+    transform: rotate(50deg);
+    position: relative; 
+}*/
+.button_burger-open .burger_icon:before {
+    display: none;
+}
+.button_burger-open .burger_icon:after {
+   position: static;
+   transform: rotate(-90deg);
+}
+.button_burger-open .burger_icon {
+    transform: rotate(45deg);
+}
 @media (min-width: 1280px) {
     .container {
         min-height: 770px;
@@ -562,8 +512,8 @@ img {
         justify-content: space-between;
         width: 100%;
     }
-    .burger {
-   display: none;
+    .button_burger {
+     display: none;
     }
     .nav_desktop {
         display: inline-block;
@@ -644,7 +594,7 @@ img {
         color: #021a23;
         font-size: 20px;
         margin-left: 30px;
-        margin-bottom: 0;
+        margin-bottom: 25px;
         margin-top: 0;
     }
     .lesson_desktop {
@@ -667,6 +617,45 @@ img {
         flex-direction: column;
         justify-content: space-between;
     }
+    .name {
+        background-color: #fbf8eb;
+        border: 0px solid #000;
+        border-bottom: 2px solid #021a23;
+        width: 210px;
+        margin: 0 auto;
+        padding-top: 25px;
+        font-size: 20px;
+    }
+    .phone {
+        background-color: #fbf8eb;
+        border: 0px solid #000;
+        border-bottom: 2px solid #021a23;
+        width: 210px;
+        margin: 0 auto;
+        padding-top: 25px;
+        font-size: 20px;
+    }
+    .direction {
+        border: 0px solid #000;
+        border-bottom: 2px solid #021a23;
+        width: 210px;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    .selectize-input {
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        background: transparent !important;
+        box-sizing: border-box;
+        padding: 0;
+        border: 0;
+        font-family: ;
+        box-shadow: none;
+        overflow: hidden;
+        font-size: 20px;
+    }
     .aside__button {
         background-color: #021a23;
         color: #fff;
@@ -678,28 +667,8 @@ img {
         border: 0px solid #000;
         margin-top: 50px;
     }
-    .name {
-        background-color: #fbf8eb;
-        border: 0px solid #000;
-        border-bottom: 2px solid #021a23;
-        width: 210px;
-        margin: 0 auto;
-    }
-    .phone {
-        background-color: #fbf8eb;
-        border: 0px solid #000;
-        border-bottom: 2px solid #021a23;
-        width: 210px;
-        margin: 0 auto;
-        padding-top: 25px;
-    }
-    .direction {
-        border: 0px solid #000;
-        border-bottom: 2px solid #021a23;
-        width: 210px;
-        margin: 0 auto;
-        padding-top: 25px;
-    }
+    
+    
     .button_register {
         color: #eef2f2;
         margin-top: 285px;
@@ -859,14 +828,6 @@ img {
         margin-top: 20px;
         text-transform: none;
     }
-
-
-
-
-
-
-
-
     .section_speed {
         margin: auto;
         padding: 0px 55px;
@@ -986,18 +947,6 @@ display: block;
         width: 266px;
         border: 2px solid #eec643;
         display: inline-block;
-
-        /*display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-        -webkit-flex-direction: column;
-        -moz-flex-direction: column;
-        -ms-flex-direction: column;
-        -o-flex-direction: column;
-        flex-direction: column;*/
-        /*justify-content: space-between;*/
     }
     .lesson_desktop_yellow {
       color: #eec643;
@@ -1013,13 +962,16 @@ display: block;
     margin-left: 30px;
     margin-bottom: 0;
     margin-top: 15px;
+    padding-bottom: 160px;
     }
     .name_yellow {
     border-bottom: 2px solid #eec643;
-     padding-top: 185px;
+     padding-top: 25px;
+     font-size: 20px;
     }
     .phone_yellow, .direction_yellow {
     border-bottom: 2px solid #eec643;
+    font-size: 20px;
     }
     .aside__button_yellow {
         background-color: #eec643;
@@ -1030,7 +982,7 @@ display: block;
         text-transform: uppercase;
         text-align: center;
         border: 0px solid #000;
-        margin-top: 68px;
+        margin-top: 50px;
         font-size: 20px;
     }
     .container_school {
@@ -1081,18 +1033,23 @@ display: block;
         font-family: 'PT Sans', Bold, sans-serif;
         letter-spacing: 1px;
         margin-top: 20px;
-        margin-left: 30px;
+        margin-right: 500px;
         letter-spacing: 1px;
+       display: block;
+
+
     }
     .title_text_concert {
         font-size: 20px;
         margin: 20px 500px 0 30px;
         line-height: 30px;
+        text-align: left;
     }
     .button_video_desktop {
         display: block;
         text-align: center;
-        margin-top: 90px;
+        margin-top: 0px;
+        text-decoration: none;
     }
     .container_three_video {
         display: block;
@@ -1157,7 +1114,6 @@ display: block;
     font-size: 50px;
     margin-top: 90px;
     margin-bottom: 20px;
-    
     }
    
     .adress, .phone_link {
@@ -1232,7 +1188,5 @@ display: block;
        text-transform: uppercase;
         color: #000;
         margin-right: 45px;
-    
-    
     }
 }

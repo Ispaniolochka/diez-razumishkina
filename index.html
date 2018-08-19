@@ -6,7 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>diez-razumishkina</title>
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/selectize.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 	<link rel="stylesheet" href="css/style.css">
+	
 </head>
 
 <body>
@@ -14,7 +17,9 @@
 		<header class="page-header">	
 			<div class="header-menu">
 				<span class="logo">Diez</span>
-			<div class="burger_icon"></div>
+				<button class="button_burger">
+					<div class="burger_icon"></div>
+				</button>
 			</div>
 			<div class="burger">
 				<ul class="menu-list" id="menu-list">
@@ -28,9 +33,6 @@
 					</li>
 				</ul>
 			</div>	
-			<!-- <a href="" class="toggler" id="toggler"><span></span></a> -->
-				
-			
 			<nav class="nav_desktop">
 				<ul class="menu-list_desktop">
 					<li class="menu-item_desktop"><a class="menu_link_desktop" href="">Направления</a>
@@ -67,7 +69,7 @@
 						<option class="direction_item">Направления</option>
 					</select>
 					<button class="aside__button" type="button">Записаться</button>
-				</form>
+				</form>				
 			</div>
 		</div>
 	</div>
@@ -152,20 +154,22 @@
 				<h2 class="subtitle_school">В стенах школы</h2>
 			</div>
 			<div class="container_big_video">
-				<div class="block_arrow_left"></div>
+				<!-- <div class="block_arrow_left"></div> -->
+				
 				<div class="block block_cherry">
 					<a class="button_video" href="#">
 						<img class="big_arrow" src="img/arrow.png" alt="стрелка для видео">
 					</a>	<span class="subtitle_img_cherry">Зимняя вишня</span>
 					<span class="title_text_concert">Финальный концерт 2018 года</span>
 				</div>
-				<div class="block_arrow_right"></div>
+				<!-- <div class="block_arrow_right"></div> -->
 			</div>
 			<div class="video_cherry_desktop">
-				<div class="block block_cherry_desktop">	<span class="subtitle_img_cherry">Зимняя вишня</span>
+				<div class="block block_cherry_desktop">	
+					<a class="button_video_desktop" href="#"><span class="subtitle_img_cherry">Зимняя вишня</span>
 					<span class="title_text_concert">Заключительный зимний концерт 2017 года выступало 97 учеников</span>
-					<a class="button_video_desktop" href="#">
 						<img class="big_arrow_desctop" src="img/arrow_desctop.png" alt="стрелка для видео">
+
 					</a>
 				</div>
 			</div>
@@ -232,20 +236,23 @@
 			</nav>
 		</div>
 	</footer>
-
-
-	<script>
-		$(function(){
-			$(".burger").click(function(){
-               $(".menu-list").toggleClass(".menu_opened");
-			})
-		})
-	</script>
-
 	
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/selectize.min.js"></script>
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-	<script src="js/js.js"></script>
 	<script src="js/map-script.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/js.js"></script>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
